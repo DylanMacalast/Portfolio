@@ -1,0 +1,82 @@
+@import './../variables/color';
+@import './../variables/mixins';
+
+.header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: #EFEFEF;
+    z-index: -1;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .header__container{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.header__block{
+    display: inline-block;
+    
+}
+
+.header__title--h1{
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 42px;
+    color: $primary;
+    margin-bottom: 30px;
+}
+
+.header__name{
+    color: $blue;
+}
+
+.header__arrow--icon{
+    display: inline-block;
+    height: 48px;
+    width: 48px;
+    padding: 15px 8px 9px 9px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid $primary;
+    border-radius: 50%;
+    color: $primary;
+    cursor: pointer;
+}
+
+.header__arrow--icon:hover{
+    transform: rotate(90deg);
+    transition: .3s ease;
+    background-color: $secondary;  
+    border: 1px solid $secondary;
+    color: $white;
+}
+
+
+//media querys
+
+@include mobile {
+
+    .header{
+        top: 0;
+    }
+
+    .header__title--h1{
+        font-size: 24px;
+    }
+
+    .header__arrow--icon{
+        display: inline-block;
+        height: 28px;
+        width: 28px;
+        padding: 6px 5px 6px 6px;
+        font-size: 14px;
+    }
+
+}

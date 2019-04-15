@@ -71,7 +71,21 @@
     width: 25px;
     height: 3px;
     background-color: $blue;
+    transition: all .3s ease;
     margin: 4px;
+}
+
+//toggle classes
+.toggle .navbar__burger--line1{
+    transform: rotate(-45deg) translate(-4px, 6px);
+}
+
+.toggle .navbar__burger--line2{
+    opacity: 0;
+}
+
+.toggle .navbar__burger--line3{
+    transform: rotate(45deg) translate(-4px, -6px);
 }
 
 
@@ -102,12 +116,15 @@
     .navbar__ul {
         position: absolute;
         right: 0px;
-        height: 92vh;
+        height: 95vh;
         top: 60px;
         width: 50%;
         background-color: $primary;
+        //NOTE: not compatible on ie ie edge and opra -- ask dan about this
         -webkit-clip-path: polygon(36% 53%, 0 68%, 41% 78%, 0 100%, 100% 100%, 100% 79%, 100% 32%, 100% 0, 0 0, 30% 18%, 0 26%);
         clip-path: polygon(36% 53%, 0 68%, 41% 78%, 0 100%, 100% 100%, 100% 79%, 100% 32%, 100% 0, 0 0, 30% 18%, 0 26%);
+        z-index: 10;
+        opacity: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -125,7 +142,7 @@
 }
 
 
-// fixing iPhone se horizontal view
+// fixing iPhone 5/SE horizontal view
 @include mobile_horizontal{
     .navbar__ul{
         top: 60px;
@@ -133,7 +150,7 @@
     }
 }
 
-//Javascript classess
+//Javascript classes
 .navbar--active{
     transform: translateX(0%);
 }
