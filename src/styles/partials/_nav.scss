@@ -1,39 +1,37 @@
 // variables import
 @import "./../variables/color";
+@import "./../variables/mixins";
 
 .navbar{
     background-color: $primary;
     width: 100%;
     height: 60px;
+    display: flex;
+    align-items: center;
     padding: 0;
     margin: 0;
     top: 0;
     position: fixed;
-    border-bottom: 5px solid $secondary;
+    border-bottom: 4px solid $secondary;
 }
 
 .navbar__logo{
     padding-left: 100px;
-    padding-top: 20px;
-    padding-bottom: 15px;
 }
 
 .navbar__ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    text-align: right;
-
-    // selecting last link to move 100px from right side
-    &:last-child{
-        padding-right: 100px;
-    }
+    display: flex;
+    justify-content: space-around;
+    width: 450px;
+    padding-right: 90px;
 }
 
 .navbar__li {
     font-size: 16px;
     display: inline;
-    padding-right: 35px;
 }
 
 
@@ -42,6 +40,8 @@
     color: #fefefe;
 }
 
+
+// nav link on hover
 .navbar__a:hover{
     color: $blue;
     transition: .3s;
@@ -54,10 +54,90 @@
     text-decoration: none;
 }
 
+// nav link active on hover
 .navbar__a--active:hover{
     color: $blue;
     text-decoration: none;
     cursor: pointer;
 }
+
+.navbar__burger{
+    display: none;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.navbar__burger div{
+    width: 25px;
+    height: 3px;
+    background-color: $blue;
+    margin: 4px;
+}
+
+
+// Media queries for drop down nav
+
+@include tablet {
+    .navbar__ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+        width: 350px;
+        padding-right: 10px;
+    }
+}
+
+@include mobile {
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .navbar__logo{
+        padding-left: 20px;
+    }
+
+    .navbar__ul {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 60px;
+        width: 50%;
+        background-color: $primary;
+        -webkit-clip-path: polygon(36% 53%, 0 68%, 41% 78%, 0 100%, 100% 100%, 100% 79%, 100% 32%, 100% 0, 0 0, 30% 18%, 0 26%);
+        clip-path: polygon(36% 53%, 0 68%, 41% 78%, 0 100%, 100% 100%, 100% 79%, 100% 32%, 100% 0, 0 0, 30% 18%, 0 26%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        padding-right: 0px;
+    }
+
+
+    .navbar__burger {
+        display: block;
+    }
+
+
+}
+
+
+// fixing iPhone se horizontal view
+@include mobile_horizontal{
+    .navbar__ul{
+        top: 60px;
+        height: 82vh;
+    }
+}
+
+//Javascript classess
+.navbar--active{
+    transform: translateX(0%);
+}
+
+
 
 
