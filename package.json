@@ -21,7 +21,10 @@
     },
     "homepage": "",
     "dependencies": {
-        "normalize.css": "^8.0.0"
+        "bootstrap": "^4.3.1",
+        "jquery": "^3.4.0",
+        "normalize.css": "^8.0.0",
+        "popper.js": "^1.15.0"
     },
     "devDependencies": {
         "ajv": "^6.3.0",
