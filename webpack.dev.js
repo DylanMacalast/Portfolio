@@ -48,7 +48,7 @@ module.exports = {
                             sourceMapContents: true
                         }
                     }
-                    // Please note we are not running postcss here
+
                 ]
             },
             {
