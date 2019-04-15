@@ -1,0 +1,26 @@
+.skills__container{
+    margin-top: 80px;
+    text-align: center;
+}
+
+.skills__h1{
+    text-align: center;
+    color: $small-title;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.skills__image{
+    margin-top: 70px;
+    max-height: 282px;
+    max-width: 282px;
+}
+
+.skills__text{
+    font-size: 16px;
+    color: $primary;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
