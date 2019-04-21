@@ -23,7 +23,7 @@
     <nav id="navbar" class="navbar">
     <img class="navbar__logo" src="./assets/dm.svg">
         <ul class="navbar__ul">
-            <li class="navbar__li"><a href="#" class="navbar__a--active">Home</a></li>
+            <li class="navbar__li"><a href="#" class="navbar__a navbar__a--active">Home</a></li>
             <li class="navbar__li"><a href="#" class="navbar__a">Skills</a></li>
             <li class="navbar__li"><a href="#" class="navbar__a">Projects</a></li>
             <li class="navbar__li"><a href="#" class="navbar__a last">Contact</a></li>
@@ -37,7 +37,7 @@
     </nav>
 
     <header id="header" class="header">
-        <div class="container row mt-5 header__container">
+        <div class="container row header__container">
             <div class="header__block">
                 <h1 class="header__title--h1"><span class="header__name">Dylan Macalast</span>.<br> Software Developer.</h1>
                 <a href="#" class="header__arrow--btn"><i class="header__arrow--icon fas fa-arrow-right"></i></a>
@@ -50,6 +50,27 @@
             <h1 class="skills__h1">skills</h1>
             <img class="skills__image" src="assets/me.png">
             <p class="skills__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis labore deleniti doloribus quaerat architecto temporibus illo eaque accusantium quo! Explicabo, minus! Ducimus natus, optio ipsam doloremque minima nihil aliquid harum.</p>
+        </div>
+
+        <div class="skills__block container text-center">
+            <!-- tab links -->
+            <ul class="skills__nav" id="skillsTab">
+                <li class="skills__nav--item">
+                    <a class="skills__nav--link" id="frontEnd" href="#frontEnd">FrontEnd</a>
+                </li>
+                <li class="skills__nav--item">
+                    <a class="skills__nav--link" id="backEnd" href="#frontEnd">BackEnd</a>
+                </li>
+                <li class="skills__nav--item">
+                    <a class="skills__nav--link" id="devTools" href="#frontEnd">DevTools</a>
+                </li>
+            </ul>
+            <!-- Tab content -->
+            <div class="skills__content" id="skillsContnet">
+                <div class="tab__content" id="frontEnd">FrontEnd</div>
+                <div class="tab__content" id="backEnd">BackEnd</div>
+                <div class="tab__content" id="devTools">DevTools</div>
+            </div>
         </div>
     </section>
 

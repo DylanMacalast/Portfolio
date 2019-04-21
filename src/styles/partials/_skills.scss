@@ -24,3 +24,22 @@
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
+.skills__block{
+    border: 1px solid $blue;
+    background-color: $primary;
+    color: #efefef;
+    height: 400px;
+}
+
+.skills__nav{
+    text-align: left;
+    list-style: none;
+    text-decoration: none;
+}
+
+.skills__content{
+    display: none;
+    padding: 20px 100px;
+    text-align: left;
+}
