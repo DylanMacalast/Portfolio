@@ -14,12 +14,14 @@ export const navSlide = () => {
 }
 
 
+
 // SKILL BLOCK
 // 1. On load open a deafult tab
 // 2. When a tab is clicked hide the other tabs content and show that tabs content
 // 3. Toggle between tabs
 
 const onTabClick = (event) => {
+    event.preventDefault(); // stopping # in anchour tag from taking you to bottom of the page
     let activeTabs = document.querySelectorAll('.active');
 
     // Deactivate exisiting active tab and panel
@@ -37,7 +39,7 @@ const onTabClick = (event) => {
 
 const element = document.getElementById('nav-tab');
 
-element.addEventListener('click', onTabClick, false); // false added so js knows we need no more options
+element.addEventListener('click', onTabClick); // false added so js knows we need no more options
 
 
 

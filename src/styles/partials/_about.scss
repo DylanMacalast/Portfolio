@@ -1,0 +1,32 @@
+.about__container{
+    margin-top: 90px;
+    background-color: $background-white;
+    height: 336px;
+    margin-top: 80px;
+}
+
+
+.about__heading{
+    text-align: center;
+    color: $small-title;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding-top: (336px/3);
+}
+
+.about__para{
+    margin-top: 20px;
+    font-size: 16px;
+    span{
+        color: $blue;
+    }
+}
+
+
+//Media querys
+@include tablet{
+    .about__container{
+        margin-top: 0;
+    }
+}
+

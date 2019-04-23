@@ -79,6 +79,7 @@
 
 .skills__tab-content{
     font-family: 'Source Code Pro', monospace;
+    font-size: 16px;
 }
 
 .skills__tab-pane { 
@@ -102,4 +103,33 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 200;
 
+}
+
+
+
+// Media querys
+@include mobile{
+    .skills__text{
+        width: 100%;
+    }
+
+    .skills__image{
+        height: 150px;
+    }
+
+    .skills__block{
+        border: 1px solid $blue;
+        background-color: $primary2;
+        color: #efefef;
+        height: 400px;
+    }
+}
+
+@include tablet{
+    .skills__text{
+        width: 100%;
+    }
+    .skills__image{
+        height: 200px;
+    }
 }
