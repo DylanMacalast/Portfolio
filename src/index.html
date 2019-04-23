@@ -16,6 +16,7 @@
     <!-- Mobile header color for iOS Safari (supports black, black-translucent or default) -->
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
@@ -25,7 +26,7 @@
         <ul class="navbar__ul">
             <li class="navbar__li"><a href="#" class="navbar__a navbar__a--active">Home</a></li>
             <li class="navbar__li"><a href="#" class="navbar__a">Skills</a></li>
-            <li class="navbar__li"><a href="#" class="navbar__a">Projects</a></li>
+            <li class="navbar__li"><a href="#" class="navbar__a">About</a></li>
             <li class="navbar__li"><a href="#" class="navbar__a last">Contact</a></li>
         </ul>
 
@@ -52,24 +53,50 @@
             <p class="skills__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis labore deleniti doloribus quaerat architecto temporibus illo eaque accusantium quo! Explicabo, minus! Ducimus natus, optio ipsam doloremque minima nihil aliquid harum.</p>
         </div>
 
-        <div class="skills__block container text-center">
-            <!-- tab links -->
-            <ul class="skills__nav" id="skillsTab">
-                <li class="skills__nav--item">
-                    <a class="skills__nav--link" id="frontEnd" href="#frontEnd">FrontEnd</a>
-                </li>
-                <li class="skills__nav--item">
-                    <a class="skills__nav--link" id="backEnd" href="#frontEnd">BackEnd</a>
-                </li>
-                <li class="skills__nav--item">
-                    <a class="skills__nav--link" id="devTools" href="#frontEnd">DevTools</a>
-                </li>
+        <div class="skills__block container">
+            <!-- Tabs -->
+            <ul id="nav-tab" class="skills__nav">
+                <li class="skills__li active"><a class="skills__a" href="#frontEnd">FrontEnd</a></li>
+                <li class="skills__li"><a class="skills__a" href="#backEnd">BackEnd</a></li>
+                <li class="skills__li"><a class="skills__a" href="#devTools">DevTools</a></li>
             </ul>
-            <!-- Tab content -->
-            <div class="skills__content" id="skillsContnet">
-                <div class="tab__content" id="frontEnd">FrontEnd</div>
-                <div class="tab__content" id="backEnd">BackEnd</div>
-                <div class="tab__content" id="devTools">DevTools</div>
+
+            <!-- Tab panes -->
+            <div class="skills__tab-content">
+                <div class="skills__tab-pane active" id="frontEnd">
+                    <h4>## FrontEnd Skills</h4> 
+                    <ul class="skills__content--list">
+                        <li>* UX/UI</li>
+                        <li>* Responsive Design</li>
+                        <li>* HTML</li>
+                        <li>* CSS/SCSS</li>
+                        <li>* Javascript</li>
+                        <li>* Sketch</li>
+                        <li>* Bootstrap</li>
+                    </ul>
+                </div>
+                <div class="skills__tab-pane" id="backEnd">
+                        <h4>## BackEnd Skills</h4> 
+                        <ul class="skills__content--list">
+                            <li>* PHP</li>
+                            <li>* NPM</li>
+                            <li class="skills__comment">// Make Sure to learn more!</li>
+                            <li>* MySQL</li>
+                        </ul>
+                </div>
+                <div class="skills__tab-pane" id="devTools">
+                        <h4>## DevTool Skills</h4> 
+                        <ul class="skills__content--list">
+                            <li>* Webpack</li>
+                            <li>* PWA</li>
+                            <li>* Git</li>
+                            <li>* BEM</li>
+                            <li>* Cross-browser compatibility</li>
+                            <li>* MS office suite</li>
+                            <li>* Accessibility</li>
+                            <li>* iTerm</li>
+                        </ul>
+                </div>
             </div>
         </div>
     </section>
