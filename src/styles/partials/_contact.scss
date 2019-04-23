@@ -1,0 +1,48 @@
+.contact__container{
+    background-color: $primary;
+    text-align: center;
+    height: 500px;
+}
+
+
+.contact__title{
+    color: $white;
+    font-size: 42px;
+    padding-top: 20px;
+}
+
+.contact__para{
+    color: $secondary;
+}
+
+.contact__form{
+    max-width: 500px;
+    min-width: 290px;
+    margin: 0 auto;
+}
+
+.form__input{
+    background: $form-background;
+    border: none;
+    border-radius: 0;
+    color: $small-title;
+    font-weight: 300;
+}
+
+.form__input:focus{
+    background: $form-background;
+    border: none;
+    color: $small-title;
+}
+
+.contact__button{
+    margin-bottom: 20px;
+    float: right;
+    color: $white;
+    background: $secondary;
+    border: none;
+    font-weight: 300;
+    height: 30px;
+    width: 80px;
+}
+

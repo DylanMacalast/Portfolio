@@ -17,6 +17,7 @@
 .about__para{
     margin-top: 20px;
     font-size: 16px;
+    color: $small-title;
     span{
         color: $blue;
     }
@@ -28,5 +29,10 @@
     .about__container{
         margin-top: 0;
     }
+
+    .about__heading{
+        padding-top: 50px;
+    }
 }
+
 
