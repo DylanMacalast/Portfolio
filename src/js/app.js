@@ -14,21 +14,21 @@ export const navSlide = () => {
 }
 
 // NAV BAR ACTIVE LINKS
-// const onLinkClick = (event) => {
-//     event.preventDefault();
-//     let activeLink = document.querySelectorAll('.navbar__a--active');
+const onLinkClick = (event) => {
+    let activeLink = document.querySelectorAll('.navbar__a--active');
 
-//     // Deactivate existing active link
-//     activeLink.forEach(function(link) {
-//         link.className = link.className.replace('navbar__a--active', '');
-//     });
+    // Deactivate existing active link
+    activeLink.forEach(function(link) {
+        link.className = link.className.replace('navbar__a--active', '');
+    });
 
-//     event.target.className += ' navbar__a--active';
+    event.target.className += ' navbar__a--active';
 
-// }
+}
+const navUl = document.querySelector('.navbar__ul');
+navUl.addEventListener('click', onLinkClick);
 
-// const navUl = document.querySelector('.navbar__ul');
-// navUl.addEventListener('click', onLinkClick);
+
 
 
 
