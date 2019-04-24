@@ -46,3 +46,15 @@
     width: 80px;
 }
 
+
+// Media querys
+@include mobile{
+    .contact__container{
+        background-color: $primary2;
+    }
+    .contact__title{
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+}
+

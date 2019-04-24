@@ -41,3 +41,11 @@
 .footer__push{
     padding-top: 20px;
 }
+
+
+//Media querys
+@include mobile{
+    .footer__copyright{
+        font-size: 18px;
+    }
+}
